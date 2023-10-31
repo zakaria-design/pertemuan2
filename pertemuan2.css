@@ -1,27 +1,10 @@
 
-html{
-	position: relative;
-}
-body{
-	margin-bottom: 220px;
-	margin-top: 30px;
-
-}
-.jumbotron  {
-	background-image: url(gambar.png);
-	width: 100%;
-	height: 100%;
-	background-size: min(60%,100%);
-	background-repeat: repeat-x;
-	position: absolute;
-	background-attachment: fixed;
-	opacity: 0;
-}
 .container {
-	width: 90%;
+	width: 80%;
 	height: 90%;
 	margin: 10px auto;
 	padding: 7px 7px 7px 7px;
+	margin-top: 50px;
 
 }
 div h1{
@@ -40,4 +23,91 @@ div h2{
 }
 .sub-materi {
 	font-weight: bold;
+}
+img {
+	width: 300px ;
+	transform: scale(1);
+	transition: .9s;
+}
+img:hover {
+	width: 70%;
+	transform: scale(.9);
+	margin-left: 30px;
+
+}
+.cabang-materi {
+	margin-left: -25px;
+
+
+}
+
+.navigation {
+	width: 100%;
+	height: 7%;
+	background-color: gray;
+	position: fixed;
+	top: 3px;
+}
+
+/*css next */
+.next {
+	width: 200px;
+	height: 30px ;
+	position: absolute;
+	top: 6px;
+	right: 30px;
+	background-color: white;
+	transform: scale(.8);
+	transition: .9s;	
+}
+.next a h4 {
+	font-size: 100%;
+	position: absolute;
+	top: -17px;
+	right: 30px;
+	transform: scale(.9);
+	transition: .9s;	
+}
+.next a h4:hover {
+	transform: scale(1);
+	color: white;
+	background-color: hotpink;
+}
+.next:hover {
+	transform: scale(1);
+	color: white;
+	background-color: hotpink;
+
+}
+
+/*css prev */
+
+.prev {
+	width: 200px;
+	height: 30px ;
+	position: absolute;
+	background-color: white;
+	transform: scale(.8);
+	transition: .9s;
+	top: 5px;
+	left: 18px;	
+}
+.prev a h4 {
+	font-size: 100%;
+	position: absolute;
+	transform: scale(.9);
+	transition: .9s;
+	top: -17px;
+	right: 35px;	
+}
+.prev a h4:hover {
+	transform: scale(1);
+	color: white;
+	background-color: hotpink;
+}
+.prev:hover {
+	transform: scale(1);
+	color: white;
+	background-color: hotpink;
+
 }
